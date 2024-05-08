@@ -3,7 +3,9 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <div className={styles.wrapper}>
-      <p>Home</p>
+      <div className={styles.projects}>
+      <h3>PROJECTS</h3>
+      </div>
     </div>
   );
 }
