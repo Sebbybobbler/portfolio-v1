@@ -1,9 +1,8 @@
 .wrapper {
-  padding: 2rem;
-  border: 1px solid lightgray;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  background: grey;
+  justify-content: right;
+  color: #368F8B;
+  background: white;
 }

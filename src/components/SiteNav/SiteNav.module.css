@@ -1,25 +1,51 @@
 .wrapper {
   padding: 1rem;
-  border: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: lightgrey;
+  background: #DDBEA8;
 }
 
 .links {
   display: flex;
 }
 
-.activeLink,
-.inactiveLink {
-  padding: 0 2rem;
-}
-
 .activeLink {
-  color: #000;
+  text-decoration: none;
+  margin: 0 1rem;
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  color: 
+#0087ca; /* Set text color */
 }
 
+
 .inactiveLink {
-  color: #666;
+  text-decoration: none;
+  margin:0 1rem;
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  color: 
+#0087ca; /* Set text color */
+}
+
+.activeLink:after,
+.inactiveLink:after{
+  content: ''; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 2px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: 
+#0087ca; /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out; /* Transition effect for the underline */
+}
+
+.activeLink:hover:after,
+.inactiveLink:hover:after{
+  transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left; /* Set transform origin */
 }
