@@ -1,17 +1,22 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#160f29 20%,transparent); 
-  color: #ddbea8;
+  background: linear-gradient(#F3DFC1 60%,#368F8B);
+  color: #368F8B;
   width: 100%;
   align-items: center;
-  border-radius: 0 10% 0 0;
-  
 }
 
-.initials {
-  color: white;
-  font-size: 1.5rem;
+.sidebarContent h1 {
+  font-size: 3rem;
+  color:linear-gradient(#F3DFC1 60%,#368F8B);
+}
+
+.sidebarContent {
+  color:linear-gradient(#F3DFC1 60%,#368F8B);
+  font-size: 1rem;
   padding: 0;
   margin: 0;
+  position: sticky;
+  top: 0;
 }

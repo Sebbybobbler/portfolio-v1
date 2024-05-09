@@ -4,10 +4,10 @@ import SiteNav from "../SiteNav/SiteNav";
 export default function Sidebar() {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.initials}>
+      <div className={styles.sidebarContent}>
         <h1>SD</h1>
+        <SiteNav />
       </div>
-      <SiteNav />
     </div>
   );
 }

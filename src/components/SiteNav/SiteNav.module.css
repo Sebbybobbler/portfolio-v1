@@ -17,7 +17,7 @@
   display: inline-block; /* Display inline block */
   position: relative; /* Set position relative */
   color: 
-white; /* Set text color */
+  #368F8B; /* Set text color */
 }
 
 
@@ -27,7 +27,7 @@ white; /* Set text color */
   display: inline-block; /* Display inline block */
   position: relative; /* Set position relative */
   color: 
-white; /* Set text color */
+  #368F8B; /* Set text color */
 }
 
 .activeLink:after,
@@ -40,7 +40,7 @@ white; /* Set text color */
   bottom: 0; /* Align to bottom */
   left: 0; /* Align to left */
   background-color: 
-white; /* Background color of the underline */
+  #368F8B; /* Background color of the underline */
   transform-origin: bottom right; /* Set transform origin */
   transition: transform 0.25s ease-out; /* Transition effect for the underline */
 }
