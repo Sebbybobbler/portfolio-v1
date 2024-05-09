@@ -1,11 +1,53 @@
 import styles from "./Home.module.css";
+import banana from "../../assets/images/banana-portfolio.png";
+import planet from "../../assets/images/planet-portfolio.png";
+import adventures from "../../assets/images/spaceadventure-portfolio.png";
+import filter from "../../assets/images/filter-portfolio.png";
+
+function ProjectCard() {
+  const project = [
+    {
+      title: "Peeling Good",
+      image: banana,
+      description: "A group frontend project designed as part of the TechNative Academy. ",
+      alt: "homepage of banana merchants website"
+    },
+    {
+      title: "Solar System",
+      image: planet,
+      description: "JavaScript project involving JavaScript to display different elements using the DOM.",
+      alt:"Homepage of solar system website",
+    },
+    {
+      title:"Space Adventure",
+      image: adventures,
+      description:"Frontend project utilising flexbox and responsive design.",
+      alt:"Homepage of a interspace travel agency",
+    },
+    {
+      title:"Planet Filter",
+      image:filter,
+      description:"JavaScript project experimenting with filtering elements",
+      alt:"Homepage of planets and searchbar"
+    }
+  ];
+
+  const projectCard = project.map((item, index) => {
+    return(
+     <div className={styles.projectCardWrapper}>
+       <h4>{item.title}</h4>
+       <img src={item.image} alt={item.alt} />
+       <span className={styles.description}>{item.description}</span>
+     </div>
+    )
+  });
+  return <div className={styles.projects}>{projectCard}</div>;
+}
 
 function Home() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.projects}>
-      <h3>PROJECTS</h3>
-      </div>
+        <ProjectCard />
     </div>
   );
 }

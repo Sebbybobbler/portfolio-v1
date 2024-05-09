@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  font-family: "Lexend", "sans-serif";
+  font-weight: 400;
 }
 
 html,
@@ -18,3 +20,5 @@ body {
 #root {
   height: 100%;
 }
+
+

@@ -15,7 +15,6 @@ function Root() {
     </div>
     <div className={styles.wrapper}>
       <SiteHeader />
-      <SiteNav />
       <MainContent />
       <SiteFooter />
     </div>

@@ -1,8 +1,22 @@
-.sidebar{
-    background-color:#160F29;
-    color:#DDBEA8;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#F3DFC1 60%,#368F8B);
+  color: #368F8B;
+  width: 100%;
+  align-items: center;
 }
 
-.sidebar p{
-    margin-top:5%;
+.sidebarContent h1 {
+  font-size: 3rem;
+  color:linear-gradient(#F3DFC1 60%,#368F8B);
+}
+
+.sidebarContent {
+  color:linear-gradient(#F3DFC1 60%,#368F8B);
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
 }

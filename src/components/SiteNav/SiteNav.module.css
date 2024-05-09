@@ -1,32 +1,33 @@
 .wrapper {
-  padding: 1rem;
+  padding: 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #DDBEA8;
+  background-color: transparent;
 }
 
 .links {
   display: flex;
+  flex-direction: column;
 }
 
 .activeLink {
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 1rem 0;
   display: inline-block; /* Display inline block */
   position: relative; /* Set position relative */
   color: 
-#0087ca; /* Set text color */
+  #368F8B; /* Set text color */
 }
 
 
 .inactiveLink {
   text-decoration: none;
-  margin:0 1rem;
+  margin:1rem 0;
   display: inline-block; /* Display inline block */
   position: relative; /* Set position relative */
   color: 
-#0087ca; /* Set text color */
+  #368F8B; /* Set text color */
 }
 
 .activeLink:after,
@@ -39,7 +40,7 @@
   bottom: 0; /* Align to bottom */
   left: 0; /* Align to left */
   background-color: 
-#0087ca; /* Background color of the underline */
+  #368F8B; /* Background color of the underline */
   transform-origin: bottom right; /* Set transform origin */
   transition: transform 0.25s ease-out; /* Transition effect for the underline */
 }
