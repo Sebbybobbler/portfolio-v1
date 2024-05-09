@@ -1,8 +1,17 @@
-.sidebar{
-    background-color:#160F29;
-    color:#DDBEA8;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#160f29 20%,transparent); 
+  color: #ddbea8;
+  width: 100%;
+  align-items: center;
+  border-radius: 0 10% 0 0;
+  
 }
 
-.sidebar p{
-    margin-top:5%;
+.initials {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
