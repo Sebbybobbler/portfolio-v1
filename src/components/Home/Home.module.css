@@ -1,44 +1,46 @@
 .wrapper {
-  background: rgb(211,211,211,0.5);
+  background: rgb(211, 211, 211, 0.5);
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
-
 }
 
-.projectCardWrapper{
-  width:40%;
+.projectCardWrapper {
+  width: 40%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   background-color: white;
   border-radius: 6%;
-  margin:3%;
+  margin: 3%;
   padding: 2%;
   box-shadow: 3px 3px 0px 1px rgb(66, 66, 66);
-  
 }
 
-.projectCardWrapper img{
-  width:80%;
+.projectCardWrapper:hover {
+  cursor: pointer;
 }
 
-.projects{
-  display:inline-flex;
+.projectCardWrapper img {
+  width: 80%;
+}
+
+.projects {
+  display: inline-flex;
   justify-content: center;
-  overflow:hidden;
+  overflow: hidden;
   flex-wrap: wrap;
 }
 
-.description{
-  margin-top:5%;
+.description {
+  margin-top: 5%;
   font-size: 0.6rem;
-  display:flex;
+  display: flex;
   text-align: center;
 }
 
-.projectCardWrapper:hover{
+.projectCardWrapper:hover {
   transform: translateX(5px);
   box-shadow: 0 0 0 0;
 }
