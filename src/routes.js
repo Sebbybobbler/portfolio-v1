@@ -9,7 +9,7 @@ const routes = [
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <Home/>,
       },
       {
         path: "about",
